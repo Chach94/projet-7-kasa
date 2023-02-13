@@ -1,7 +1,10 @@
+import Header from "../components/Header";
+
 function Lodging() {
   return (
     <div>
-      <h1>A propos</h1>
+      <Header />
+      <h1>Lodging</h1>
     </div>
   );
 }

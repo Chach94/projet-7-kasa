@@ -1,7 +1,10 @@
+import Header from "../components/Header";
+
 function Error() {
   return (
     <div>
-      <h1>A propos</h1>
+      <Header />
+      <h1>ERREUR 404</h1>
     </div>
   );
 }
