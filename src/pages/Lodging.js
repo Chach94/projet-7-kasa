@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 function Lodging() {
@@ -5,6 +6,7 @@ function Lodging() {
     <div>
       <Header />
       <h1>Lodging</h1>
+      <Footer />
     </div>
   );
 }
