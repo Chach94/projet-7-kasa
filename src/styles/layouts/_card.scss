@@ -1,3 +1,22 @@
+.container-lodge {
+  position: relative;
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  background: linear-gradient(white, black);
+}
+.lodge-img {
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  object-fit: cover;
+  opacity: 0.5;
+}
 .lodge-title {
-  font-size: 50px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
 }
