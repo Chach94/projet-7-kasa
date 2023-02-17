@@ -1,10 +1,10 @@
 // importation des composents footer et header
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import Footer from "../../components/footer/Footer";
+import Header from "../../components/header/Header";
 // importation des liens via react router
 import { Link } from "react-router-dom";
 //
-import "../styles/style.scss";
+import "./Error.css";
 
 function Error() {
   return (

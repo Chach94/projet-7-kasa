@@ -1,12 +1,12 @@
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import Card from "../components/Card";
-import Banner from "../components/Banner";
+import Footer from "../../components/footer/Footer";
+import Header from "../../components/header/Header";
+import Card from "../../components/card/Card";
+import Banner from "../../components/banner/Banner";
 
-import Picture from "../assets/ImgHome.png";
-import { LodgingList } from "../data/LodgingList";
+import Picture from "../../assets/ImgHome.png";
+import { LodgingList } from "../../data/LodgingList";
 
-import "../styles/style.scss";
+import "./Home.css";
 function Home() {
   return (
     <div>

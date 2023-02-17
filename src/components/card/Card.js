@@ -1,6 +1,5 @@
-import "../styles/style.scss";
 import { Link } from "react-router-dom";
-
+import "./Card.css";
 function Card({ id, title, cover }) {
   return (
     <div className="container-lodge">

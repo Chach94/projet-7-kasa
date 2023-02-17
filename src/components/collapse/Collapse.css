@@ -1,0 +1,31 @@
+.container-about {
+  margin-bottom: 33px;
+}
+
+.block-title {
+  background: #ff6060;
+  border-radius: 5px;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+.title-about {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}
+.block-text {
+  background-color: #f6f6f6;
+  padding: 20px;
+  border-radius: 5px;
+}
+.text-about {
+  font-size: 24px;
+  font-weight: 400;
+  color: #ff6060;
+}
+.button:active {
+  transform: rotateX(180deg);
+}
