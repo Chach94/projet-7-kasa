@@ -1,8 +1,12 @@
 .container-about {
-  margin-bottom: 33px;
+  position: relative;
+  margin-top: 60px;
 }
 
 .block-title {
+  position: absolute;
+  top: -15px;
+  width: 984px;
   background: #ff6060;
   border-radius: 5px;
   height: 47px;
@@ -18,14 +22,24 @@
 }
 .block-text {
   background-color: #f6f6f6;
-  padding: 20px;
+  padding: 10px;
   border-radius: 5px;
 }
 .text-about {
   font-size: 24px;
   font-weight: 400;
   color: #ff6060;
+  padding: 15px;
 }
-.button:active {
-  transform: rotateX(180deg);
+.button-down {
+  border: none;
+  background: none;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+.button-up {
+  border: none;
+  background: none;
+  cursor: pointer;
+  transform: none;
 }

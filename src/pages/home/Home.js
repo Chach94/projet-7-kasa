@@ -15,11 +15,7 @@ function Home() {
 
       <div className="block">
         {LodgingList.map((lodging, index) => (
-          <Card
-            key={`${lodging.id}-${index}`}
-            title={lodging.title}
-            cover={lodging.cover}
-          />
+          <Card key={lodging.id} title={lodging.title} cover={lodging.cover} />
         ))}
       </div>
       <Footer />
