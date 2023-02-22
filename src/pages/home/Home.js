@@ -14,8 +14,13 @@ function Home() {
       <Banner image={Picture} texte="Chez vous, partout et ailleurs" />
 
       <div className="block">
-        {LodgingList.map((lodging, index) => (
-          <Card key={lodging.id} title={lodging.title} cover={lodging.cover} />
+        {LodgingList.map((lodging) => (
+          <Card
+            key={lodging.id}
+            title={lodging.title}
+            cover={lodging.cover}
+            id={lodging.id}
+          />
         ))}
       </div>
       <Footer />
