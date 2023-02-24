@@ -1,0 +1,5 @@
+.collapse-block {
+  display: flex;
+  gap: 70px;
+  width: 100%;
+}

@@ -1,4 +1,4 @@
-.container {
+.container-carroussel {
   position: relative;
 }
 
@@ -12,9 +12,11 @@
   position: absolute;
   top: 160px;
   right: 15px;
+  cursor: pointer;
 }
 .fleche-gauche {
   position: absolute;
   top: 160px;
   left: 15px;
+  cursor: pointer;
 }

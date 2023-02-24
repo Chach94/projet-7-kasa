@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import fleche from "../../assets/flechecollapse.png";
 
 import "./Collapse.css";
-function Collapse({ title, texte }) {
+function Collapse({ title, texte, up }) {
   const [open, setOpen] = useState(true);
 
   return (

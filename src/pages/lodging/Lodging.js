@@ -2,7 +2,7 @@ import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 import Carroussel from "../../components/carroussel/Carroussel";
 import Collapse from "../../components/collapse/Collapse";
-
+import "./Lodging.css";
 import { LodgingList } from "../../data/LodgingList";
 import { useParams } from "react-router-dom";
 
@@ -14,9 +14,11 @@ function Lodging() {
   return (
     <div>
       <Header />
-      <Carroussel id={Info.id} pictures={Info.pictures[0]}></Carroussel>
-      <Collapse title="Description" texte={Info.description}></Collapse>
-      <Collapse title="Equipements" texte={Info.equipments}></Collapse>
+      <Carroussel id={Info.id} pictures={Info.pictures}></Carroussel>
+      <div className="collapse-block">
+        <Collapse title="Description" texte={Info.description}></Collapse>
+        <Collapse title="Equipements" texte={Info.equipments}></Collapse>
+      </div>
       <Footer />
     </div>
   );
