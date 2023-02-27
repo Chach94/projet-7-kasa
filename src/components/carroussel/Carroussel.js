@@ -1,17 +1,33 @@
 import "./Carroussel.css";
 import Flechedroite from "../../assets/flechedroite.png";
 import Flechegauche from "../../assets/flechegauche.png";
-import { useState } from "react";
+import React, { useState } from "react";
 
-function Carroussel({ id, pictures }) {
-  console.log(pictures.length - 1);
+function Carroussel({ pictures }) {
+  const [count, setCount] = useState(0);
+  const length = pictures.length;
+
+  const nextPicture = () => {
+    setCount(count === length - 1 ? 0 : count + 1);
+  };
+  const prevPicture = () => {
+    setCount(count === 0 ? length - 1 : count - 1);
+  };
   return (
     <div className="container-carroussel">
-      <img src={pictures[0]} alt="appartement" className="pictures" />
-      <button>
+      <button onClick={nextPicture}>
         <img src={Flechedroite} alt="fleche" className="fleche-droite" />
       </button>
-      <img src={Flechegauche} alt="fleche" className="fleche-gauche" />{" "}
+      <button onClick={prevPicture}>
+        <img src={Flechegauche} alt="fleche" className="fleche-gauche" />
+      </button>
+      {pictures.map((picture, index) => (
+        <div key={index}>
+          {index === count && (
+            <img src={picture} alt="appartement" className="pictures" />
+          )}
+        </div>
+      ))}
     </div>
   );
 }

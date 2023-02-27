@@ -14,7 +14,9 @@ function Lodging() {
   return (
     <div>
       <Header />
-      <Carroussel id={Info.id} pictures={Info.pictures}></Carroussel>
+      <Carroussel pictures={Info.pictures}></Carroussel>
+      <h2 className="title-lodging">{Info.title}</h2>
+      <p className="text-lodging">{Info.location}</p>
       <div className="collapse-block">
         <Collapse title="Description" texte={Info.description}></Collapse>
         <Collapse title="Equipements" texte={Info.equipments}></Collapse>

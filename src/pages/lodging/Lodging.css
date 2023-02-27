@@ -3,3 +3,14 @@
   gap: 70px;
   width: 100%;
 }
+.title-lodging {
+  font-size: 36px;
+  color: #ff6060;
+  font-weight: 500;
+  margin: 20px 0px 0px 0px;
+}
+.text-lodging {
+  font-size: 18px;
+  color: #ff6060;
+  margin: 5px 0px;
+}
