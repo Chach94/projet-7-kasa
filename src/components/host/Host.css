@@ -1,0 +1,19 @@
+.picture-host {
+  object-fit: cover;
+  width: 64px;
+  height: 64px;
+  border-radius: 64px;
+}
+.name-host {
+  width: 90px;
+  padding: 10px;
+  word-wrap: break-word;
+  font-size: 18px;
+  color: #ff6060;
+  font-weight: 500;
+}
+.block-host {
+  display: flex;
+  justify-content: flex-end;
+  text-align: end;
+}
