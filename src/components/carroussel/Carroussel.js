@@ -18,6 +18,7 @@ function Carroussel({ pictures }) {
       <button onClick={nextPicture}>
         <img src={Flechedroite} alt="fleche" className="fleche-droite" />
       </button>
+
       <button onClick={prevPicture}>
         <img src={Flechegauche} alt="fleche" className="fleche-gauche" />
       </button>
@@ -28,6 +29,9 @@ function Carroussel({ pictures }) {
           )}
         </div>
       ))}
+      <span className="count">
+        {count + 1}/{length}
+      </span>
     </div>
   );
 }

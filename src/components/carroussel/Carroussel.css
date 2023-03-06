@@ -24,3 +24,11 @@ button {
   border: none;
   background: none;
 }
+.count {
+  position: absolute;
+  bottom: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  left: 50%;
+}
