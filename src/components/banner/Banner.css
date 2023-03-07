@@ -23,3 +23,21 @@
   font-size: 48px;
   font-weight: 500;
 }
+@media screen and (max-width: 767px) {
+  .banner {
+    height: 111px;
+    border-radius: 10px;
+  }
+  .img {
+    height: 111px;
+    border-radius: 10px;
+  }
+  .title-banner {
+    left: 10px;
+    bottom: 10px;
+    width: 222px;
+    text-align: start;
+
+    font-size: 24px;
+  }
+}

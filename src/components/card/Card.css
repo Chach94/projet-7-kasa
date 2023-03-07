@@ -20,3 +20,9 @@
   font-weight: 500;
   font-size: 18px;
 }
+@media screen and (max-width: 767px) {
+  .lodge-title {
+    font-size: 18px;
+    width: 200px;
+  }
+}

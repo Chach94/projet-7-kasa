@@ -11,18 +11,22 @@ import Rating from "../../components/rating/Rating";
 import "./Lodging.css";
 
 function Lodging() {
-  const lodgId = useParams();
+  // Utilisation UseParams pour récupération de l'id
+  const lodgeId = useParams();
 
-  const Info = LodgingList.find((el) => el.id === lodgId.id);
-  if (Info === undefined) {
+  // Comparaison de l'id de la liste et celle de lodgeId
+  const oneLodge = LodgingList.find((el) => el.id === lodgeId.id);
+
+  // condition si onelodge n'est pas défini alors on retourne sur la page error
+  if (oneLodge === undefined) {
     return <Navigate replace to="/error" />;
   }
-
-  const equipments = Info.equipments.map((equipement, index) => {
+  // Map sur les equipements pour avoir les infos equipement selon L'id
+  const equipments = oneLodge.equipments.map((equipement, index) => {
     return <li key={index}>{equipement}</li>;
   });
-
-  const tag = Info.tags.map((tags, index) => {
+  // Map sur les tags en fonction de l'id
+  const tag = oneLodge.tags.map((tags, index) => {
     return (
       <span className="tag" key={index}>
         {tags}
@@ -33,18 +37,24 @@ function Lodging() {
   return (
     <div>
       <Header />
-      <Carroussel pictures={Info.pictures}></Carroussel>
-      <h2 className="title-lodging">{Info.title}</h2>
-      <p className="text-lodging">{Info.location}</p>
+      <Carroussel pictures={oneLodge.pictures}></Carroussel>
+      <h2 className="title-lodging">{oneLodge.title}</h2>
+      <p className="text-lodging">{oneLodge.location}</p>
       <Tag tag={tag} />
       <div className="lodging-host">
-        <Host name={Info.host.name} picture={Info.host.picture} />{" "}
-        <Rating rating={Info.rating} />
+        <Host name={oneLodge.host.name} picture={oneLodge.host.picture} />
+        <Rating rating={oneLodge.rating} />
       </div>
 
       <div className="collapse-block">
-        <Collapse title="Description" texte={Info.description}></Collapse>
-        <Collapse title="Equipements" texte={equipments}></Collapse>
+        <Collapse
+          title={<span className="test">{"Description"}</span>}
+          texte={<span className="test">{oneLodge.description}</span>}
+        ></Collapse>
+        <Collapse
+          title={<span className="test">{"Equipements"}</span>}
+          texte={equipments}
+        ></Collapse>
       </div>
       <Footer />
     </div>

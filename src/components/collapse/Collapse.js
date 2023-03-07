@@ -14,7 +14,7 @@ function Collapse({ title, texte }) {
           onClick={() => setOpen(!open)}
           className={!open ? "button-up" : "button-down"}
         >
-          <img src={fleche} alt="fleche" />
+          <img src={fleche} alt="fleche" className="fleche" />
         </button>
       </div>
 

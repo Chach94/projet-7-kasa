@@ -18,3 +18,17 @@
   font-size: 24px;
   font-family: Montserrat;
 }
+
+@media screen and (max-width: 767px) {
+  .logo-header {
+    width: 40%;
+  }
+  .navtext {
+    gap: 20px;
+  }
+
+  .navhome {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}

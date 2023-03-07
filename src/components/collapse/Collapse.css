@@ -1,12 +1,12 @@
 .container-about {
   position: relative;
-  margin-top: 60px;
+  margin-top: 30px;
   width: 100%;
+  background-color: #f6f6f6;
+  border-radius: 5px;
 }
 
 .block-title {
-  position: absolute;
-  top: -15px;
   width: 100%;
   background: #ff6060;
   border-radius: 5px;
@@ -23,7 +23,7 @@
 }
 .block-text {
   background-color: #f6f6f6;
-  padding: 10px 0px;
+
   border-radius: 5px;
   width: 100%;
 }
@@ -31,7 +31,7 @@
   font-size: 24px;
   font-weight: 400;
   color: #ff6060;
-  padding: 15px;
+  padding: 0px 15px 30px 15px;
 }
 .button-down {
   border: none;
@@ -46,4 +46,22 @@
   cursor: pointer;
   transform: none;
   margin: 20px;
+}
+@media screen and (max-width: 767px) {
+  .text-about {
+    font-size: 12px;
+  }
+  .title-about {
+    font-size: 13px;
+  }
+  .fleche {
+    width: 20px;
+  }
+  .block-title {
+    width: 100%;
+    height: 35px;
+  }
+  .container-about {
+    margin-top: 40px;
+  }
 }

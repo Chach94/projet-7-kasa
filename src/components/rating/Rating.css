@@ -4,3 +4,9 @@
   margin-top: 10px;
   gap: 10px;
 }
+@media screen and (max-width: 767px) {
+  .rating {
+    width: 15px;
+    height: 15px;
+  }
+}
