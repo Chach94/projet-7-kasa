@@ -13,17 +13,18 @@
   top: 160px;
   right: 15px;
   cursor: pointer;
+  background: none;
+  border: none;
 }
 .fleche-gauche {
   position: absolute;
   top: 160px;
   left: 15px;
   cursor: pointer;
-}
-button {
-  border: none;
   background: none;
+  border: none;
 }
+
 .count {
   position: absolute;
   bottom: 30px;
@@ -38,12 +39,11 @@ button {
     border-radius: 10px;
   }
   .fleche-droite {
-    width: 15px;
-    top: 140px;
+    width: 20px;
+    top: 110px;
   }
   .fleche-gauche {
-    width: 15px;
-    top: 140px;
+    top: 110px;
   }
   .count {
     display: none;

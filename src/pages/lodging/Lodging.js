@@ -36,26 +36,23 @@ function Lodging() {
 
   return (
     <div>
-      <Header />
-      <Carroussel pictures={oneLodge.pictures}></Carroussel>
-      <h2 className="title-lodging">{oneLodge.title}</h2>
-      <p className="text-lodging">{oneLodge.location}</p>
-      <Tag tag={tag} />
-      <div className="lodging-host">
-        <Host name={oneLodge.host.name} picture={oneLodge.host.picture} />
-        <Rating rating={oneLodge.rating} />
-      </div>
-
-      <div className="collapse-block">
-        <Collapse
-          title={<span className="test">{"Description"}</span>}
-          texte={<span className="test">{oneLodge.description}</span>}
-        ></Collapse>
-        <Collapse
-          title={<span className="test">{"Equipements"}</span>}
-          texte={equipments}
-        ></Collapse>
-      </div>
+      <section className="wrapper">
+        <Header />
+        <Carroussel pictures={oneLodge.pictures}></Carroussel>
+        <div className="essai">
+          <h2 className="title-lodging">{oneLodge.title}</h2>
+          <p className="text-lodging">{oneLodge.location}</p>
+          <Tag tag={tag} />
+          <div className="lodging-host">
+            <Host name={oneLodge.host.name} picture={oneLodge.host.picture} />
+            <Rating rating={oneLodge.rating} />
+          </div>
+        </div>
+        <div className="collapse-block">
+          <Collapse title="Description" texte={oneLodge.description}></Collapse>
+          <Collapse title="Equipements" texte={equipments}></Collapse>
+        </div>
+      </section>
       <Footer />
     </div>
   );

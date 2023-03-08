@@ -30,8 +30,17 @@ li {
   position: relative;
   bottom: 110px;
 }
+.essai {
+  border: 1px solid blue;
+}
 .test {
   font-size: 18px;
+}
+@media screen and (max-width: 992px) {
+  .collapse-block {
+    flex-direction: column;
+    gap: 0px;
+  }
 }
 @media screen and (max-width: 767px) {
   .title-lodging {

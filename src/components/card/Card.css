@@ -25,4 +25,12 @@
     font-size: 18px;
     width: 200px;
   }
+  .container-lodge {
+    width: 100%;
+    height: 255px;
+  }
+  .lodge-img {
+    width: 100%;
+    height: 255px;
+  }
 }

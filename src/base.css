@@ -3,11 +3,14 @@
 }
 body {
   font-family: Montserrat;
-  max-width: 1240px;
   margin: auto;
 }
+.wrapper {
+  margin: 30px;
+}
+
 @media screen and (max-width: 992px) {
-  body {
+  .wrapper {
     margin: 10px;
   }
 }

@@ -11,6 +11,9 @@
   display: flex;
   gap: 50px;
 }
+.navhome:hover {
+  text-decoration: underline;
+}
 .navhome {
   text-decoration: none;
   display: flex;

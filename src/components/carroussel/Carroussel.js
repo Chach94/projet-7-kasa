@@ -15,12 +15,12 @@ function Carroussel({ pictures }) {
   };
   return (
     <div className="container-carroussel">
-      <button onClick={nextPicture}>
-        <img src={Flechedroite} alt="fleche" className="fleche-droite" />
+      <button onClick={nextPicture} className="fleche-droite">
+        <img src={Flechedroite} alt="fleche" className="fleche" />
       </button>
 
-      <button onClick={prevPicture}>
-        <img src={Flechegauche} alt="fleche" className="fleche-gauche" />
+      <button onClick={prevPicture} className="fleche-gauche">
+        <img src={Flechegauche} alt="fleche" className="fleche" />
       </button>
       {pictures.map((picture, index) => (
         <div key={index}>

@@ -10,19 +10,21 @@ import "./Home.css";
 function Home() {
   return (
     <div>
-      <Header />
-      <Banner image={Picture} texte="Chez vous, partout et ailleurs" />
+      <section className="wrapper">
+        <Header />
+        <Banner image={Picture} texte="Chez vous, partout et ailleurs" />
 
-      <div className="block">
-        {LodgingList.map((lodging) => (
-          <Card
-            key={lodging.id}
-            title={lodging.title}
-            cover={lodging.cover}
-            id={lodging.id}
-          />
-        ))}
-      </div>
+        <div className="block">
+          {LodgingList.map((lodging) => (
+            <Card
+              key={lodging.id}
+              title={lodging.title}
+              cover={lodging.cover}
+              id={lodging.id}
+            />
+          ))}
+        </div>
+      </section>
       <Footer />
     </div>
   );

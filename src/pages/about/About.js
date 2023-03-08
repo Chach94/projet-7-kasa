@@ -14,17 +14,19 @@ import "./About.css";
 function About() {
   return (
     <div>
-      <Header />
-      <Banner image={Picture} />
-      <div className="container">
-        {Aboutdata.map((about, index) => (
-          <Collapse
-            key={`${about}-${index}`}
-            title={about.title}
-            texte={about.texte}
-          />
-        ))}
-      </div>
+      <section className="wrapper">
+        <Header />
+        <Banner image={Picture} />
+        <div className="container">
+          {Aboutdata.map((about, index) => (
+            <Collapse
+              key={`${about}-${index}`}
+              title={about.title}
+              texte={about.texte}
+            />
+          ))}
+        </div>
+      </section>
       <Footer />
     </div>
   );

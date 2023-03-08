@@ -9,14 +9,16 @@ import "./Error.css";
 function Error() {
   return (
     <div>
-      <Header />
-      <h1 className="title-error">404</h1>
-      <p className="paragraphe-error">
-        Oups! La page que vous demandez n'existe pas.
-      </p>
-      <Link to="/" className="lien-error">
-        Retourner sur la page d'accueil
-      </Link>
+      <section className="wrapper">
+        <Header />
+        <h1 className="title-error">404</h1>
+        <p className="paragraphe-error">
+          Oups! La page que vous demandez n'existe pas.
+        </p>
+        <Link to="/" className="lien-error">
+          Retourner sur la page d'accueil
+        </Link>
+      </section>
       <Footer />
     </div>
   );

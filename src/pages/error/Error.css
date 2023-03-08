@@ -16,3 +16,17 @@
   font-size: 18px;
   margin-top: 200px;
 }
+@media screen and (max-width: 767px) {
+  .title-error {
+    font-size: 96px;
+  }
+  .paragraphe-error {
+    font-size: 18px;
+    margin: 0px;
+  }
+  .lien-error {
+    font-size: 14px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+}
