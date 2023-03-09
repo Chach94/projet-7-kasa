@@ -3,7 +3,7 @@ import { useParams, Navigate } from "react-router-dom";
 
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
-import Carroussel from "../../components/carroussel/Carroussel";
+import Slideshow from "../../components/slideshow/Slideshow";
 import Collapse from "../../components/collapse/Collapse";
 import Tag from "../../components/tag/Tag";
 import Host from "../../components/host/Host";
@@ -38,16 +38,19 @@ function Lodging() {
     <div>
       <section className="wrapper">
         <Header />
-        <Carroussel pictures={oneLodge.pictures}></Carroussel>
-        <div className="essai">
-          <h2 className="title-lodging">{oneLodge.title}</h2>
-          <p className="text-lodging">{oneLodge.location}</p>
-          <Tag tag={tag} />
-          <div className="lodging-host">
+        <Slideshow pictures={oneLodge.pictures}></Slideshow>
+        <div className="block-lodging">
+          <div className="block-info">
+            <h2 className="title-lodging">{oneLodge.title}</h2>
+            <p className="text-lodging">{oneLodge.location}</p>
+            <Tag tag={tag} />
+          </div>
+          <div className="block-host-lodging">
             <Host name={oneLodge.host.name} picture={oneLodge.host.picture} />
             <Rating rating={oneLodge.rating} />
           </div>
         </div>
+
         <div className="collapse-block">
           <Collapse title="Description" texte={oneLodge.description}></Collapse>
           <Collapse title="Equipements" texte={equipments}></Collapse>

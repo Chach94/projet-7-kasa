@@ -1,9 +1,9 @@
-import "./Carroussel.css";
+import "./Slideshow.css";
 import Flechedroite from "../../assets/flechedroite.png";
 import Flechegauche from "../../assets/flechegauche.png";
 import React, { useState } from "react";
 
-function Carroussel({ pictures }) {
+function Slideshow({ pictures }) {
   const [count, setCount] = useState(0);
   const length = pictures.length;
 
@@ -14,7 +14,7 @@ function Carroussel({ pictures }) {
     setCount(count === 0 ? length - 1 : count - 1);
   };
   return (
-    <div className="container-carroussel">
+    <div className="container-slide">
       <button onClick={nextPicture} className="fleche-droite">
         <img src={Flechedroite} alt="fleche" className="fleche" />
       </button>
@@ -36,4 +36,4 @@ function Carroussel({ pictures }) {
   );
 }
 
-export default Carroussel;
+export default Slideshow;

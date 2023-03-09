@@ -47,6 +47,7 @@
   transform: none;
   margin: 20px;
 }
+
 @media screen and (max-width: 767px) {
   .text-about {
     font-size: 12px;
