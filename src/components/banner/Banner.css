@@ -7,7 +7,7 @@
   background-color: black;
 }
 
-.img {
+.img-banner {
   opacity: 0.6;
   object-fit: cover;
   width: 100%;
@@ -29,12 +29,15 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .banner-about {
+    height: 223px !important;
+  }
   .banner {
     height: 111px;
     border-radius: 10px;
     margin-bottom: 25px;
   }
-  .img {
+  .img-banner {
     height: 111px;
     border-radius: 10px;
   }

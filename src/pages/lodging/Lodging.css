@@ -7,7 +7,7 @@
   font-size: 36px;
   color: #ff6060;
   font-weight: 500;
-  margin: 20px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
 }
 .text-lodging {
   font-size: 18px;
@@ -16,6 +16,7 @@
 }
 li {
   list-style-type: none;
+  font-size: 18px;
 }
 .tag {
   background-color: #ff6060;
@@ -33,6 +34,7 @@ li {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 .block-host-lodging {
   display: flex;
@@ -63,6 +65,7 @@ li {
   .tag {
     font-size: 10px;
     border-radius: 5px;
+    padding: 5px 15px;
   }
   .block-host-lodging {
     display: flex;
@@ -73,5 +76,6 @@ li {
   .block-lodging {
     display: flex;
     flex-direction: column;
+    margin-top: 10px;
   }
 }

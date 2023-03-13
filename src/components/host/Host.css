@@ -29,5 +29,6 @@
   }
   .block-host {
     align-items: center;
+    margin-top: 20px;
   }
 }

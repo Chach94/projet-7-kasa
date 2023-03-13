@@ -44,6 +44,7 @@
   }
   .fleche-gauche {
     top: 110px;
+    left: 0px;
   }
   .count {
     display: none;

@@ -16,7 +16,7 @@ function About() {
     <div>
       <section className="wrapper">
         <Header />
-        <Banner image={Picture} />
+        <Banner image={Picture} tall="banner-about" />
         <div className="container">
           {Aboutdata.map((about, index) => (
             <Collapse

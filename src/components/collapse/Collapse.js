@@ -8,7 +8,9 @@ function Collapse({ title, texte, className }) {
   return (
     <div className="container-about">
       <div className="block-title">
-        <h2 className="title-about">{title}</h2>
+        <h2 className={`title-about ${className ? "lodging-text" : ""}`}>
+          {title}
+        </h2>
 
         <button
           onClick={() => setOpen(!open)}
@@ -20,7 +22,9 @@ function Collapse({ title, texte, className }) {
 
       {!open ? (
         <div className="block-text">
-          <p className="text-about">{texte}</p>
+          <p className={`text-about ${className ? "lodging-text" : ""}`}>
+            {texte}
+          </p>
         </div>
       ) : (
         <div className="block-text"></div>

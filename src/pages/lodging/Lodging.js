@@ -52,8 +52,16 @@ function Lodging() {
         </div>
 
         <div className="collapse-block">
-          <Collapse title="Description" texte={oneLodge.description}></Collapse>
-          <Collapse title="Equipements" texte={equipments}></Collapse>
+          <Collapse
+            title="Description"
+            texte={oneLodge.description}
+            className="lodging-text"
+          ></Collapse>
+          <Collapse
+            title="Equipements"
+            texte={equipments}
+            className="lodging-text"
+          ></Collapse>
         </div>
       </section>
       <Footer />
