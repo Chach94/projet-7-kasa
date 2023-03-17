@@ -5,16 +5,15 @@
   border-radius: 64px;
 }
 .name-host {
-  width: 110px;
+  width: 100px;
   padding: 10px;
-  word-wrap: break-word;
   font-size: 18px;
   color: #ff6060;
   font-weight: 500;
 }
 .block-host {
   display: flex;
-
+  justify-content: flex-end;
   text-align: end;
 }
 @media screen and (max-width: 767px) {
@@ -25,7 +24,7 @@
   }
   .name-host {
     font-size: 12px;
-    width: 100px;
+    width: 80px;
   }
   .block-host {
     align-items: center;

@@ -55,12 +55,12 @@ function Lodging() {
           <Collapse
             title="Description"
             texte={oneLodge.description}
-            className="lodging-text"
+            fontSize={true}
           ></Collapse>
           <Collapse
             title="Equipements"
             texte={equipments}
-            className="lodging-text"
+            fontSize={true}
           ></Collapse>
         </div>
       </section>

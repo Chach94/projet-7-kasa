@@ -2,15 +2,14 @@ import React, { useState } from "react";
 import fleche from "../../assets/flechecollapse.png";
 
 import "./Collapse.css";
-function Collapse({ title, texte, className }) {
+function Collapse({ title, texte, fontSize }) {
   const [open, setOpen] = useState(true);
-
+  const className = `title-about ${fontSize ? "lodging-text" : ""}`;
+  const classNameText = `text-about ${fontSize ? "lodging-text" : ""}`;
   return (
     <div className="container-about">
       <div className="block-title">
-        <h2 className={`title-about ${className ? "lodging-text" : ""}`}>
-          {title}
-        </h2>
+        <h2 className={className}>{title}</h2>
 
         <button
           onClick={() => setOpen(!open)}
@@ -22,9 +21,7 @@ function Collapse({ title, texte, className }) {
 
       {!open ? (
         <div className="block-text">
-          <p className={`text-about ${className ? "lodging-text" : ""}`}>
-            {texte}
-          </p>
+          <p className={classNameText}>{texte}</p>
         </div>
       ) : (
         <div className="block-text"></div>

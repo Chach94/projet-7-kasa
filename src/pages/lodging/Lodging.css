@@ -35,10 +35,7 @@ li {
   flex-wrap: wrap;
   margin-top: 20px;
 }
-.block-host-lodging {
-  display: flex;
-  flex-direction: column;
-}
+
 @media screen and (max-width: 1196px) {
   .block-host-lodging {
     display: flex;
